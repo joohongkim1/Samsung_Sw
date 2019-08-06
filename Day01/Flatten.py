@@ -18,5 +18,6 @@ for i in range(1, t+1):
             for b in range(0, a):
                 if height[b] > height[b+1]:
                     height[b], height[b+1] = height[b+1], height[b]
+        
        
     print('#%d %d' % (i, height[-1] - height[0]))
