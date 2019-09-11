@@ -1,11 +1,12 @@
 import sys
-sys.stdin = open("회문1_input.txt")
+sys.stdin = open("회문2_input.txt")
 
 
 for tc in range(1, 11):
     n = int(input())
     a = [''] * 8
     count = 0
+    max_val = 0
     result = True
 
     for i in range(8):
@@ -31,4 +32,3 @@ for tc in range(1, 11):
             if result:
                 count += 1
     print('#{} {}'.format(tc, count))
-
